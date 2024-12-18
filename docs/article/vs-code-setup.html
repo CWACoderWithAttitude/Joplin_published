@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet" href="/_assets/main.css" />
+
+    <title>VS Code Setup - Note taking is everything</title>
+  </head>
+  <body>
+    <div class="main">
+      <nav class="navigation">
+        <a href="/">Note taking is everything</a>
+      </nav>
+      <article>
+        <header>
+          <h1 class="article-title">VS Code Setup</h1>
+          <div class="article-info">
+            <div>
+              <span
+                >Created At：<time datetime="1733422862692"
+                  >2024-12-05 19:21</time
+                ></span
+              >
+              <span
+                >Updated At：<time datetime="1733575670440"
+                  >2024-12-07 13:47</time
+                ></span
+              >
+            </div>
+            
+          </div>
+        </header>
+        <div class="article-content markdown-body"><h1 id="vs-code-setup"><a title="https://www.youtube.com/watch?v=PwGKhvqJCQM" href="https://www.youtube.com/watch?v=PwGKhvqJCQM">VS Code Setup</a></h1>
+<p>This summarizes the steps describe in the above video by <a title="https://www.youtube.com/@ArjanCodes" href="https://www.youtube.com/@ArjanCodes">@ArjanCodes</a><br />
+<a title="https://arjan.codes/designguide" href="https://arjan.codes/designguide">arjan.codes/designguide</a></p>
+<p><a title="https://medium.com/@jonbackhaus/your-vs-code-project-needs-a-development-container-8643299f560c" href="https://medium.com/@jonbackhaus/your-vs-code-project-needs-a-development-container-8643299f560c">Your VS Code Project Needs A Development Container</a></p>
+<h2 id="basecontainer">BaseContainer</h2>
+<p>First attempt was ms std python devcontainer - nope<br />
+Second attempt: <a title="https://medium.com/@shaliamekh/python-package-management-with-uv-for-dockerized-environments-f3d727795044" href="https://medium.com/@shaliamekh/python-package-management-with-uv-for-dockerized-environments-f3d727795044">create my own devcontainer</a></p>
+<h2 id="auto-formatter">auto formatter</h2>
+<ul>
+<li>ruff
+<ul>
+<li>Either in OS or as VS Code extension</li>
+<li>configure by <code>ruff.toml</code></li>
+</ul>
+</li>
+<li>black (from microsofts python extension - is slower than ruff)</li>
+</ul>
+<h2 id="project-management">Project Management</h2>
+<ul>
+<li>poerty</li>
+<li>uv</li>
+</ul>
+<h2 id="from-microsoft">from microsoft</h2>
+<ul>
+<li>python extension
+<ul>
+<li>include pylance (python intellisense)</li>
+<li>includes python debugger</li>
+</ul>
+</li>
+</ul>
+<h2 id="misc">misc</h2>
+<ul>
+<li>Even better TOML</li>
+<li><code>.vscode</code> folder
+<ul>
+<li><code>extensions.json</code>  can provide <code>"recommendations":[]</code>  which will be displayer in the <code>Recommended</code> section of the Extensions selection dialog (similar to <code>@recommended</code> search)</li>
+</ul>
+</li>
+</ul>
+<h2 id="howto">howto</h2>
+<ol>
+<li>create folder x ; cd into it</li>
+<li><code>uv init</code> --no-workspace
+<ul>
+<li>we do not need a workspace for a single project</li>
+</ul>
+</li>
+<li>create:
+<ol>
+<li><code>.vscode/</code></li>
+<li><code>settings.json</code></li>
+<li><code>extensions.json</code></li>
+<li><code>.gitignore</code></li>
+<li><code>src/</code></li>
+<li>mv <code>hello.py</code> to <code>src/main.py</code></li>
+<li><code>__init__.py</code></li>
+<li><code>tests/</code></li>
+<li><code>touch tests/test_main.py</code></li>
+<li>$ uv add --dev pytest</li>
+</ol>
+</li>
+</ol>
+</div>
+      </article>
+    </div>
+  </body>
+</html>

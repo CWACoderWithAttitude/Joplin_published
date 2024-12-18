@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title></title>
+        <link>undefined</link>
+        <description>undefined</description>
+        <lastBuildDate>Wed, 18 Dec 2024 21:12:40 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Joplin Pages Publisher</generator>
+        <item>
+            <title><![CDATA[Emulatrix]]></title>
+            <guid>5b6e86cb6bf04dcc980f05afdd4a3a2b</guid>
+            <pubDate>Wed, 18 Dec 2024 21:06:12 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="emulatrix">Emulatrix</h1>
+<p>Use WebAssembly to emulate gaming consoles and more (e.g. Sega Genesis, Nintendo, Super Nintendo, GameBoy,...)</p>
+<ul>
+<li><a title="https://github.com/lrusso/Emulatrix" href="https://github.com/lrusso/Emulatrix">Emulatrix</a></li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Quake III]]></title>
+            <guid>f86270e7aa8a4122bf3dee9473a63d7e</guid>
+            <pubDate>Wed, 18 Dec 2024 21:04:45 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="quake-iii">Quake III</h1>
+<ul>
+<li><a title="https://lrusso.github.io/Quake3/Quake3.htm" href="https://lrusso.github.io/Quake3/Quake3.htm">Quake 3 run in Browser</a></li>
+</ul>
+]]></content:encoded>
+        </item>
+    </channel>
+</rss>
